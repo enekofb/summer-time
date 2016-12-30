@@ -1,2 +1,4 @@
 content/data
 content/images
+.idea/
+node_modules/ghost/content/data/ghost-dev.db

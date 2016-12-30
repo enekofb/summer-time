@@ -70,7 +70,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // ### Development **(default)**
         development: {
             // The url to use when providing links to the site, E.g. in RSS and email.
-            url: 'http://my-ghost-blog.com',
+            url: 'http://localhost:2368',
 
             // Example mail config
             // Visit http://support.ghost.org/mail for instructions
@@ -90,7 +90,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
             database: {
                 client: 'sqlite3',
                 connection: {
-                    filename: path.join(__dirname, '/content/data/ghost-dev.db')
+                    filename: path.join(__dirname, '/node_modules/ghost/content/data/ghost-dev.db')
                 },
                 debug: false
             },
