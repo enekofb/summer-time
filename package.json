@@ -1,20 +1,35 @@
 {
-    "name": "openshift-ghost-quickstart",
-    "description": "Openshift Ghost Quickstart (SQLite)",
+    "name": "OpenShift-Nodejs-Cartridge",
+    "version": "1.1.0",
+    "description": "Node.js Cartridge for OpenShift",
+    "keywords": [
+        "OpenShift",
+        "Node.js",
+        "application",
+        "openshift"
+    ],
+    "author": {
+        "name": "OpenShift",
+        "email": "ryanj@redhat.com",
+        "url":  "http://openshift.redhat.com/"
+    },
+    "homepage": "http://openshift.redhat.com/",
     "repository": {
         "type": "git",
-        "url": "git://github.com/openshift-quickstart/openshift-ghost-quickstart.git"
+        "url": "https://gitub.com/openshift/nodejs-custom-version-openshift.git"
     },
-    "bugs": "https://github.com/openshift-quickstart/openshift-ghost-quickstart/issues",
     "main": "index.js",
     "scripts": {
         "start": "node index"
     },
     "engines": {
-        "node": "~4.2.0"
+        "node": "~4.2.0",
+        "npm": ">= 1.2.0"
     },
     "engine-strict": true,
     "dependencies": {
+        "config-multipaas": "^0.1.0",
+        "restify": "^2.8.3",
         "express": "^4.13.3",
         "ghost": "^0.11.3"
     }
