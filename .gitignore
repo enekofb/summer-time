@@ -2,7 +2,6 @@ content/data
 .idea/
 node_modules/ghost
 node_modules/config-multipaas
-node_modules/express
 node_modules/restify
 node_modules/.bin/
 npm-debug.log
